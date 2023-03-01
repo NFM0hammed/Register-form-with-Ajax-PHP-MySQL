@@ -4,7 +4,7 @@
     require_once "connection.php";
 
     // Get data to insert it into database
-    if(isset($_POST["username"]) && isset($_POST["firstname"]) && isset($_POST["lastname"]) && $_POST["password"]) {
+    if(isset($_POST["username"]) && isset($_POST["firstname"]) && isset($_POST["lastname"]) && isset($_POST["password"])) {
         
         $username         = $_POST["username"];
         $firstname        = $_POST["firstname"];
