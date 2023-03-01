@@ -1,0 +1,110 @@
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1), rgba(0,212,255,1) 0, rgba(159,115,255,1) 50%);
+}
+.form {
+    background-color: #310089;
+    color: #fff;
+    margin: 50px auto;
+    padding: 0 0 50px;
+    border-radius: 3px;
+}
+@media(min-width: 481px) {
+    .form {
+        width: 450px;
+    }
+}
+@media(max-width: 480px) {
+    .form {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+.form .register {
+    background-color: #27006d;
+    text-align: center;
+}
+.form .success,
+.form .error {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+.form .success {
+    display: none;
+    background-color: #07d807;
+}
+.form .error {
+    background-color: red;
+}
+.form .sign-up .error.username {
+    display: none;
+}
+.form .sign-up .error.valid-username {
+    display: none;
+}
+.form .sign-up .error.first-name {
+    display: none;
+}
+.form .sign-up .error.last-name {
+    display: none;
+}
+.form .sign-up .error.password {
+    display: none;
+}
+.form .register h3 {
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 2px;
+    cursor: pointer;
+}
+.form .register h3.active {
+    border-bottom: 1px solid #fff;
+}
+.form .sign-up,
+.form .sign-in {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 30px auto 0;
+}
+.form .sign-in {
+    display: none;
+}
+.form .sign-in .error.username {
+    display: none;
+}
+.form .sign-in .error.valid-login {
+    display: none;
+}
+.form .sign-in .error.password {
+    display: none;
+}
+.form .sign-up input,
+.form .sign-in input {
+    background-color: #f9f9f9;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.form .sign-up input:focus,
+.form .sign-in input:focus {
+    outline: none;
+}
+.form .sign-up input:not(:last-child),
+.form .sign-in input:not(:last-child) {
+    margin-bottom: 20px;
+}
+.form .sign-up input:last-child,
+.form .sign-in input:last-child {
+    background-color: #00bc00;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.form .sign-up input:last-child:hover,
+.form .sign-in input:last-child:hover {
+    background-color: #07d807;
+}
